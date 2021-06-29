@@ -1,0 +1,11 @@
+cabal-version:   2.0
+name:            bench-fibo
+version:         0.0
+build-type:      Simple
+synopsis:        Example of a benchmark
+
+executable bench
+  main-is:       Bench.hs
+  other-modules: Encoding, BenchLib
+  type:          exitcode-stdio-1.0
+  build-depends: base, bytestring, deepseq, containers
